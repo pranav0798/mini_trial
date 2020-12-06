@@ -2,7 +2,7 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ master]
+    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -13,9 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: install math library
-      run:  sudo apt-get install -y libmath-libm-perl
- 
-
+      
     - name: make all
-      run:  make mini_trial-master
+      run:  make all -C mini_trial/
+
