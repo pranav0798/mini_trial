@@ -19,4 +19,4 @@ jobs:
  
 
     - name: make all
-      run:  make Simple_Calculator-main
+      run:  make mini_trial-master
